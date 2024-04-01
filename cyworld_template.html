@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/cyworld.css" />
+  <title>Cyworld Minihomepy Template</title>
+</head>
+<body>
+  <div id="grid-container">
+    <div class="outer-layer outline-left">
+      <div class="dashed-layer-left outline-left">
+        <div class="inner-layer outline-left">
+          <div class="header">
+            <div id="credit"></div>
+          </div>
+          <div class="left container">
+            <div id="profile">
+              <span id="mood">
+                <!-- modify mood here -->
+                happy 
+              </span>
+              <!-- profile picture!! -->
+              <img id="pfp" src="https://files.catbox.moe/avy5uo.png">
+              <div id="bio" style="font-size:small">
+                <!-- add bio -->
+                안녕하세요 ^^
+              </div>
+              <div id="contact">
+                <!-- name and contact info -->
+                <div style="display:flex; flex-direction:row">
+                  <p id="name">예림</p>
+                  <p id="dob"> 2024.03.26</p>
+                </div>
+                <p id="email">yeri@prools.dev</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div id="rings">
+      <img id="ring1" src="https://files.catbox.moe/rm0au0.png">
+      <img id=ring2 src="https://files.catbox.moe/rm0au0.png">
+      <img id=ring3 src="https://files.catbox.moe/rm0au0.png">
+      <img id=ring4 src="https://files.catbox.moe/rm0au0.png">
+    </div>
+    <div class="outer-layer outline-main">
+      <div class="dashed-layer-right outline-main">
+        <div class="inner-layer outline-main">
+          <div class="main header">
+            <div id="title">
+              <!-- title :3 -->
+              싸이월드 미니홈피
+            </div>
+            <div id="url">
+              <!-- replace this with your URL -->
+              https://prools.dev/cyworld_template.html
+            </div>
+          </div>
+          <div id="main">
+            <div class="container">
+              <div class="content">
+                <!-- you can add content here -->
+                <div class="divider">
+                  About
+                </div>
+                <p>I made this layout to recreate the Cyworld's Minihomepy UI.</p>
+              </div>
+              <div style="width:1px;margin-right:-7px;padding:0;"></div>
+            </div>
+            <div id="navbar">
+              <nav>
+                <!-- placeholder navigation links -->
+                <!-- give the "selected" id to the navlink of current page -->
+                <a href="#" id="selected">Home</a>
+                <a href="#">Profile</a>
+                <a href="#">Diary</a>
+                <a href="#">Photo</a>
+                <a href="#">Board</a>
+                <a href="#">Visitor</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div id="cyworldhome">cyworld home</div>
+      <div id="right-panel">
+        <div class="stat">
+          <p>active</p>
+          <div class="statbar">
+            <div class="progress progress-orange" style="width:27%"></div>
+          </div>
+        </div>
+        <div class="stat">
+          <p>famous</p>
+          <div class="statbar">
+            <div class="progress progress-green" style="width:5%"></div>
+          </div>
+        </div>
+        <div class="stat">
+          <p>friendly</p>
+          <div class="statbar">
+            <div class="progress progress-blue" style="width:12%"></div>
+          </div>
+        </div>
+      </div>
+      <div id="music-player">
+        <div id="song-display">
+          <img src="https://files.catbox.moe/10jhky.png">
+          <marquee id="song-title" scrollamount="3">Happy – Mitski</marquee>
+        </div>
+        <div id="controls">
+          <div class="music-control">
+            <div class="button" id="playpause" onclick="playpauseTrack()">
+              <img src="https://files.catbox.moe/l4vvwd.png">
+            </div>
+            <div class="button" id="stop" onclick="stopTrack()">
+              <svg width="7px" height="7px" viewBox="0 0 300 300" xmlns="http://www.w3.org/3000/svg">
+                <g>
+                 <rect height="220" width="200" y="40" x="50" stroke="#000"/>
+                </g>
+               </svg>
+            </div>
+            <div class="button" id="prev" onclick="prevTrack()">
+              <img src="https://files.catbox.moe/73lakz.png">
+            </div>
+            <div class="button" id="next" onclick="nextTrack()">
+              <img src="https://files.catbox.moe/8rj90n.png">
+            </div>
+          </div>
+          <div class="vol-control">
+            <div class="button" id="volume" onclick="muteToggle()">
+              <img src="https://files.catbox.moe/tb934i.png">
+            </div>
+            <input type="range" min="0" max="1"
+              value="1" step="0.01" class="volume-slider" onchange="setVolume()">
+          <div class="button" onclick="listToggle()">
+            <div id="list">
+              LIST
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <script src="js/musicplayer.js"></script> 
+</body>
+</html>
